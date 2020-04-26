@@ -1,0 +1,135 @@
+Version: '1.0.0-SNAPSHOT'
+MainWorld: 'world_main'
+WorldBorder:
+  world: 5000
+  world_nether: 5000
+  world_the_end: 5000
+  world_main: 1000
+Group:
+  G0:
+    prefix: '&7Lv0'
+    permission:
+      - 'minecraft.command.me,false'
+      - 'bukkit.command.plugins,false'
+      - 'minecraft.command.msg,false'
+      - 'rule.warp.pvp,true'
+      - 'rule.warp.pve,true'
+      - 'rule.warp.world,true'
+      - 'rule.warp.nether,true'
+      - 'rule.warp.end,true'
+      - 'rule.kit.G0,true'
+  G1:
+    prefix: '&fLv1'
+    permission:
+      - 'rule.kit.G1,true'
+      - 'rule.tphere,true'
+      - 'rule.pay,true'
+  G2:
+    prefix: '&fLv2'
+    permission:
+      - 'rule.kit.G2,true'
+  G3:
+    prefix: '&fLv3'
+    permission:
+      - 'rule.kit.G3,true'
+      - 'rule.einv,true'
+      - 'rule.back,true'
+  G4:
+    prefix: '&fLv4'
+    permission:
+      - 'rule.kit.G4,true'
+      - 'rule.fly,true'
+      - 'rule.table,true'
+      - 'rule.hat,true'
+      - 'rule.vip,true'
+  G5:
+    prefix: '&fLv5'
+    permission:
+      - 'rule.kit.G5,true'
+      - 'rule.heal,true'
+      - 'rule.dnd,true'
+      - 'rule.chat.color,true'
+  G6:
+    prefix: '&fLv6'
+    permission:
+      - 'rule.kit.G6,true'
+      - 'rule.top,true'
+      - 'rule.name,true'
+
+
+
+Warps:
+  pvp: world,0,0,0,0,0
+
+
+Kits:
+  Newly:
+    time: -1
+    items:
+      - Blank
+      - Home
+  LV1:
+    time: 1000000
+    items:
+      - Blank
+      - Home
+
+
+Items:
+  Blank:
+    display: ' '
+    material: WHITE_STAINED_GLASS_PANE
+    lore:
+  Home:
+    display: '&e&l家'
+    material: red_bed
+    lore:
+      - '&6⚖&9home'
+      - '&3&l名称&7:&f value'
+      - ''
+      - '&6*&7点击传送'
+      - '&6*&7摁Shift点击'
+      - '&6*&7可设置点'
+  Einv:
+    display: '&e&l末影箱'
+    material: ender_chest
+    lore:
+      - '&6⚖&9einv'
+      - '&3&l权限&7:&f rule.einv'
+      - ''
+      - '&6*&7点击打开'
+      - '&6*&7需要等级Lv3'
+  Table:
+    display: '&e&l工作台'
+    material: crafting_table
+    lore:
+      - '&6⚖&9table'
+      - '&3&l权限&7:&f rule.table'
+      - ''
+      - '&6*&7点击打开'
+      - '&6*&7需要等级Lv4'
+  Fly:
+    display: '&e&l工作台'
+    material: feather
+    lore:
+      - '&6⚖&9fly'
+      - '&3&l权限&7:&f rule.fly'
+      - ''
+      - '&6*&7点击切换飞行状态'
+      - '&6*&7需要等级Lv4'
+  Plugin:
+    display: '&e&l插件'
+    material: book
+    lore:
+      - '&6⚖&9plugin'
+      - ''
+      - '&6*&7点击管理插件'
+  Prefix:
+    display: '&e&l称号'
+    material: book
+    lore:
+      - '&6⚖&9prefix'
+      - '&3&l期限&7:&f value'
+
+      - ''
+      - '&6*&7点击切换称号'
